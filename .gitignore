@@ -7,5 +7,5 @@
 /bin
 /lib
 /tmp
-build/vc10/*.sdf
-build/vc10/*.suo
+*.sdf
+*.suo
