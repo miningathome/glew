@@ -25,4 +25,4 @@ if (MSVC)
 	add_definitions(-DVC_EXTRALEAN)
 endif()
 
-add_library(glew ${SRC} ${HDR} ${ADDITIONAL})
+add_library(glew ${ADDITIONAL} ${SRC} ${HDR})
