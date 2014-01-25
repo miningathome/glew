@@ -10,6 +10,4 @@
 *.sdf
 *.suo
 *.opensdf
-build/vc11/tmp
-build/glew.aps
-cbuild/
+build/
