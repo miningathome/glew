@@ -15,7 +15,7 @@ set (HDR include/GL/glew.h include/GL/wglew.h)
 list (APPEND ADDITIONAL "")
 
 if (WIN32)
-	list (APPEND ADDITIONAL "build/glew.rc")
+	list (APPEND ADDITIONAL old_build/glew.rc)
 	add_definitions(-DWIN32_LEAN_AND_MEAN)
 endif()
 
