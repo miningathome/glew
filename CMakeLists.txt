@@ -26,3 +26,11 @@ if (MSVC)
 endif()
 
 add_library(glew ${ADDITIONAL} ${SRC} ${HDR})
+
+# -- INSTALL
+
+install(DIRECTORY include/GL
+	DESTINATION include)
+
+install(TARGETS glew EXPORT glewExport
+	DESTINATION lib)
