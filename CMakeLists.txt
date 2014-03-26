@@ -6,7 +6,6 @@ set(vendor "${CMAKE_CURRENT_SOURCE_DIR}/..")
 include(${vendor}/unifier/unifier.cmake)
 
 option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
-option(BUILD_STATIC_LIBS "Build static libraries" ON)
 
 include_directories(include)
 
@@ -24,7 +23,7 @@ endif()
 if (BUILD_SHARED_LIBS)
 	add_definitions(-DGLEW_BUILD)
 	set(libtype SHARED)
-elseif (BUILD_STATIC_LIBS)
+else()
 	add_definitions(-DGLEW_STATIC)
 	set(libtype STATIC)
 endif()
